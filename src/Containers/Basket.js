@@ -43,7 +43,7 @@ const Basket = ({
                   <td>{phone.count}</td>
                   <td>
                     <span
-                      className="delete-cart"
+                      className="glyphicon glyphicon-remove"
                       onClick={() => removePhoneFromBasket(phone.id)}
                     ></span>
                   </td>

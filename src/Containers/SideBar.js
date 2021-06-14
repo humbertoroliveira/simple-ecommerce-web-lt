@@ -9,9 +9,13 @@ export const SideBar = () => {
     <div>
       <div className="row">
         <BasketCart />
+      </div>
+      
+      <div className="row">
         <AccountButton />
       </div>
       <br />
+
       <Categories />
       <Newsletter />
     </div>

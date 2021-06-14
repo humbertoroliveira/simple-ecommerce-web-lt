@@ -1,9 +1,10 @@
 const initialState = {
-  email: "",
-  age: "30s",
-  gender: "m",
-  country: "Brazil",
+  username: "",
+  password: "",
+  firstName: "",
+  lastName: "",
   isRegistered: false,
+  isLoggedIn: false,
   userId: "",
 };
 

@@ -14,7 +14,6 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  background: url("/images/preloader.gif") no-repeat 50% 50%;
   margin: -32px 0 0 -32px;
 }
 
@@ -195,7 +194,6 @@
   font-size: 34px;
 }
 .delete-cart {
-  background: url(/images/trash_16x16.gif) no-repeat 0 0;
   display: block;
   height: 16px;
   width: 16px;

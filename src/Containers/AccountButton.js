@@ -8,28 +8,39 @@ class AccountButton extends React.Component {
     super(props);
 
     this.state = {
-      userId: props.userId,
-      email: props.email,
+      isLoggedIn: props.isLoggedIn,
+      isRegistered: props.isRegistered,
+      username: props.username,
+      firstName: props.firstName,
+      lastName: props.lastName,
     };
   }
 
   render() {
     return (
-      <Link to="/profile" id="dLabel">
-        <div className="col-md-3">
+      <div className="itemButton">
+        {!this.state.isLoggedIn && (
+        <Link to="/profile" id="dLabel">
           <button
-            className="btn btn-default"
-            title={this.state.email ? this.state.email : "View Profile"}
+            className="btn btn-default btn-block"
           >
-            {!this.state.userId && (
-              <small>
-                <span className="glyphicon glyphicon-question-sign" />
-              </small>
-            )}
-            <span className="glyphicon glyphicon-user" />
+          <span className="glyphicon glyphicon-user" /> 
+          
+            {(!this.state.isLoggedIn 
+              && !this.state.isRegistered) 
+              ? 'Register' : 'Sign In'}
+
           </button>
+        </Link>
+        )}
+
+        {this.state.isLoggedIn && (
+        <div>
+          Hi {this.state.firstName} {this.state.lastName}
         </div>
-      </Link>
+        )}
+
+      </div>
     );
   }
 }
