@@ -85,7 +85,6 @@ class Profile extends React.Component {
 
     browserHistory.push("/");
 
-    //TODO: Identify and consecutive event
   };
 
   render() {

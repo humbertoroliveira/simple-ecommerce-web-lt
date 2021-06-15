@@ -14,7 +14,6 @@ export const applyDiscount = (invertedDiscount, code) => (dispatch) => {
 };
 
 export const fetchPhones = () => {
-  //TODO: implement event for when User viewed a product list or category
   return async (dispatch) => {
     try {
       dispatch({
@@ -101,9 +100,6 @@ export const fetchPhoneById = (id) => {
 };
 
 export const addPhoneToBasket = (id) => (dispatch) => {
-  // TODO: Day 2.2
-  // Implement a track() for “Product Added”. Property: product_id.
-
   dispatch({
     type: "ADD_PHONE_TO_BASKET",
     payload: id,
@@ -111,7 +107,6 @@ export const addPhoneToBasket = (id) => (dispatch) => {
 };
 
 export const searchPhone = (text) => (dispatch) => {
-  //TODO: implement event for when User filtered a product list or category
   console.log("searching ", text);
   dispatch({
     type: "SEARCH_PHONE",
@@ -138,10 +133,6 @@ export const basketCheckout = (phones) => (dispatch, getState) => {
     (a, b) => a + (b.price * invertedDiscount || 0),
     0
   );
-
-  // TODO: Day 2.2
-  // Implement a track() for “Order Completed”. Properties: revenue and coupon.
-  // .: revenue and coupon variables are already initialised for you
 
   alert(JSON.stringify(phones));
 };

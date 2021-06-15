@@ -20,7 +20,6 @@ const Basket = ({
   cleanBasket,
   basketCheckout,
 }) => {
-  //TODO: implement event for when User viewed their shopping cart
   const isBasketEmpty = R.isEmpty(phones);
   const renderContent = () => {
     return (

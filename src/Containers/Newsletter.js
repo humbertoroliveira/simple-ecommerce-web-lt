@@ -15,12 +15,6 @@ class Newsletter extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-
-    // TODO: Day 2.1
-    // Implement an identify() without a userId (AKA “anonymous identify”) but with an email trait
-    // .: email is at this.state.emailValue
-    // Implement the event “Newsletter Subscription Started”. No properties.
-
     alert("Thank you for subscribing!");
   };
 
